@@ -2,14 +2,23 @@
 
 A modern, responsive web application that allows users to search and explore GitHub profiles. Built with React and the GitHub API, this application provides a seamless experience for discovering GitHub users and their repositories.
 
-![GitHub User Finder Screenshot](screenshot.png)
+![Screenshot 2025-04-21 at 3 16 33 PM](https://github.com/user-attachments/assets/f48d4d41-f7e8-4f77-9ead-80a897605ec6)
+
 
 ## 🌟 Features
 
 - **Real-time Search**: Instant search results with GitHub user suggestions
+
+![Screenshot 2025-04-21 at 3 16 57 PM](https://github.com/user-attachments/assets/711776e4-a362-40a6-b9ac-4dd3339593d3)
 - **User Profiles**: Detailed view of GitHub user information
+
+![Screenshot 2025-04-21 at 3 16 47 PM](https://github.com/user-attachments/assets/b146a7a0-6ed9-4a41-ae0e-fac224b824ba)
 - **Repository Explorer**: Browse through user repositories with sorting options
+
+![Screenshot 2025-04-21 at 3 17 04 PM](https://github.com/user-attachments/assets/da27ce65-3e60-4086-ae37-8eb477cdae63)
 - **Responsive Design**: Fully responsive layout that works on all devices
+
+![Screenshot 2025-04-21 at 3 17 10 PM](https://github.com/user-attachments/assets/d3cb4f5a-7372-4973-ad02-d8c2185714bf)
 - **Modern UI**: Clean and intuitive interface with smooth animations
 - **Error Handling**: Graceful error handling and loading states
 - **URL-based Navigation**: Shareable URLs for user profiles and search results
@@ -20,14 +29,13 @@ A modern, responsive web application that allows users to search and explore Git
 
 - Node.js (v14.0.0 or higher)
 - npm (v6.0.0 or higher)
-- GitHub Personal Access Token (for API access)
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/github-user-finder.git
-   cd github-user-finder
+   git clone https://github.com/snowflowerr/github-userfinder.git
+   cd github-userfinder
    ```
 
 2. Install dependencies:
@@ -35,17 +43,12 @@ A modern, responsive web application that allows users to search and explore Git
    npm install
    ```
 
-3. Create a `.env` file in the root directory and add your GitHub token:
-   ```
-   VITE_GITHUB_TOKEN=your_github_token_here
-   ```
-
-4. Start the development server:
+3. Start the development server:
    ```bash
    npm run dev
    ```
 
-5. Open your browser and navigate to `http://localhost:5173`
+4. Open your browser and navigate to `http://localhost:5173`
 
 ## 🛠️ Built With
 
@@ -146,22 +149,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+Your Name - [Bhudeo Krit](bhudeokrit@gmail.com)
 
-Project Link: [https://github.com/yourusername/github-user-finder](https://github.com/yourusername/github-user-finder)
-
-## 🔄 Future Improvements
-
-- [ ] Add dark/light theme toggle
-- [ ] Implement repository filtering
-- [ ] Add user activity graphs
-- [ ] Include repository language statistics
-- [ ] Add user following/followers lists
-- [ ] Implement repository search within user profiles
-- [ ] Add GitHub authentication for enhanced API limits
-- [ ] Include repository contribution graphs
+Project Link: [https://github.com/yourusername/github-user-finder](https://github.com/snowflowerr/github-userfinder)
 
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by [Bhudeo Krit]
 # Github-Userfinder
