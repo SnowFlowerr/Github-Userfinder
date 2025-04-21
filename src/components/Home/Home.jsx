@@ -34,10 +34,10 @@ const Home = () => {
         <h2 className={styles.sectionTitle}>Popular Users</h2>
         <div className={styles.userGrid}>
           {[
-            { login: 'torvalds', name: 'Linus Torvalds' },
-            { login: 'gaearon', name: 'Dan Abramov' },
-            { login: 'sindresorhus', name: 'Sindre Sorhus' },
-            { login: 'yyx990803', name: 'Evan You' },
+            { login: 'snowflowerr', name: 'Bhudeo krit' },
+            { login: 'rishavtarway', name: 'Rishav Tarway' },
+            { login: 'allAboutManas', name: 'Manas Raj' },
+            { login: 'avinashkrsingh01', name: 'Avinash Kumar Singh' },
           ].map((user) => (
             <Link
               key={user.login}
