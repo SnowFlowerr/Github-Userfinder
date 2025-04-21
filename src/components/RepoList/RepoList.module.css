@@ -1,0 +1,137 @@
+.repoList {
+  margin-top: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  color: #24292e;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.repoCard {
+  display: block;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e1e4e8;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.repoCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #0366d6;
+}
+
+.repoHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.repoName {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #0366d6;
+  font-weight: 600;
+}
+
+.privateBadge,
+.publicBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.privateBadge {
+  background-color: #f6f8fa;
+  color: #586069;
+  border: 1px solid #e1e4e8;
+}
+
+.publicBadge {
+  background-color: #e6f1f6;
+  color: #0366d6;
+  border: 1px solid #b3d4e6;
+}
+
+.repoDescription {
+  color: #586069;
+  margin: 0.5rem 0 1rem;
+  line-height: 1.5;
+}
+
+.repoStats {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #586069;
+}
+
+.statIcon {
+  font-size: 1.1rem;
+}
+
+.statValue {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.repoFooter {
+  color: #586069;
+  font-size: 0.9rem;
+}
+
+.noRepos {
+  text-align: center;
+  padding: 2rem;
+  color: #586069;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e1e4e8;
+}
+
+@media (max-width: 768px) {
+  .repoCard {
+    padding: 1rem;
+  }
+
+  .repoStats {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .stat {
+    flex: 1;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .repoHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .repoName {
+    font-size: 1.1rem;
+  }
+} 

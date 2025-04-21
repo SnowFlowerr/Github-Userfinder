@@ -1,0 +1,239 @@
+.searchContainer {
+  background-color: #24292e;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 0;
+}
+
+.searchContent {
+  width: 95%;
+  max-width: 1150px; 
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #58a6ff 0%, #0366d6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.searchForm {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.searchWrapper {
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  background-color: #3f4448;
+  color: white;
+  transition: all 0.3s ease;
+  padding-right: 3rem;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #0366d6;
+  background-color: #4a4f53;
+  box-shadow: 0 0 0 4px rgba(3, 102, 214, 0.2);
+}
+
+.searchInput::placeholder {
+  color: #8b949e;
+}
+
+.loadingSpinner {
+  position: absolute;
+  right: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid #0366d6;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+  border: 1px solid #e1e4e8;
+}
+
+.suggestionItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.suggestionItem:hover {
+  background-color: #f6f8fa;
+}
+
+.suggestionItem:not(:last-child) {
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.suggestionAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e1e4e8;
+  transition: border-color 0.2s ease;
+}
+
+.suggestionItem:hover .suggestionAvatar {
+  border-color: #0366d6;
+}
+
+.suggestionInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.suggestionUsername {
+  color: #24292e;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.suggestionName {
+  color: #586069;
+  font-size: 0.9rem;
+}
+
+.searchButton {
+  padding: 1rem 1.5rem;
+  background-color: #0366d6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+}
+
+.searchButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(3, 102, 214, 0.3);
+}
+
+.searchButton:active {
+  transform: translateY(0);
+}
+
+.searchIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    padding: 1rem 0;
+  }
+
+  .searchContent {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .searchForm {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .searchButton {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .suggestions {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    border-radius: 16px 16px 0 0;
+    max-height: 60vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .searchInput {
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+  }
+
+  .searchButton {
+    padding: 0.875rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  .suggestionItem {
+    padding: 0.875rem 1rem;
+  }
+
+  .suggestionAvatar {
+    width: 36px;
+    height: 36px;
+  }
+} 
